@@ -187,18 +187,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
 
 /* Services */
 
-.cards {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.card-wrap {
-  position: relative;
-  margin: 1.7rem 0.8rem;
-}
-
 .card {
   position: relative;
   width: 100%;
@@ -212,15 +200,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   padding: 3rem 2rem;
   overflow: hidden;
   transition: 0.3s;
-}
-
-
-.card-wrap:hover .card {
-  transform: translateY(-15px);
-}
-
-.card-wrap:hover .card:after {
-  height: 8px;
 }
 
 .card .title-sm {
@@ -237,10 +216,19 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
 
 /* Projects */
 
-.projectcard {border-radius: 5%; margin-top: 0px;}
-.projectcard img {border-radius: 5%; }
+.projectcard {
+  border-radius: 5%; 
+  margin-top: 0px;
+}
 
-.project-title {text-align: center;  margin: 0 auto;}
+.projectcard img {
+  border-radius: 5%; 
+}
+
+.project-title {
+  text-align: center;  
+  margin: 0 auto;
+}
 
 
 .projectcard {
@@ -258,7 +246,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
 .projectcard:hover {
   transform: translateY(-15px);
 }
-
 
 
 .blog-info h5 {
@@ -297,17 +284,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   padding: 5.5rem 4.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-
-
-.progress-box {
-  width: 100%;
-  background-color: var(--light-one);
-  width: 100%;
-  border-radius: 45px;
-  padding: 5.5rem 4.5rem;
-  
 }
 
 .badge {font-size: 1.3rem; color: white !important; }
@@ -397,34 +373,12 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   border-radius: 2rem;
 }
 
-
-
 .contact-input .btn {
   margin-top: 0.6rem;
 }
 
 /* End Contact */
 
-/* Hire me */
-
-.hireme {
-  padding: 12rem 0;
-}
-
-.hireme .container1 {
-  text-align: center;
-}
-
-.hireme .title {
-  margin-bottom: 1.3rem;
-}
-
-.hireme .text {
-  max-width: 1000px;
-  margin: 0 auto 1.6rem auto;
-}
-
-/* End Hire me */
 
 /* Footer */
 
@@ -435,7 +389,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   padding-right: 0px;
   margin: 0px !important;
 }
-
 
 .footer .text {
   color: #aaa;
@@ -452,27 +405,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   color: var(--main-color);
 }
 
-
-
-.input-arrow {
-  color: #fff;
-  background-color: var(--main-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.45rem;
-  transition: 0.3s;
-}
-
-.input-arrow:hover {
-  background-color: #6b44e0;
-}
-
-.focus {
-  background: #fff;
-}
-
-
 .copyright .text {
   color: #7b7b7b;
   font-size: 1.2rem;
@@ -485,76 +417,7 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   cursor: pointer;
 }
 
-.followme-wrap {
-  display: flex;
-}
 
-.followme {
-  display: flex;
-  align-items: center;
-}
-
-.followme h3 {
-  color: #7b7b7b;
-  font-weight: 500;
-  font-size: 1.3rem;
-}
-
-.followme .footer-line {
-  width: 60px;
-  height: 2px;
-  background-color: #7b7b7b;
-  margin: 0 1.2rem;
-  display: inline-block;
-}
-
-.social-media a {
-  color: #7b7b7b;
-  font-size: 1.3rem;
-  margin-right: 0.4rem;
-  transition: 0.3s;
-}
-
-
-.back-btn-wrap {
-  position: relative;
-  margin-left: 2.5rem;
-}
-
-.back-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 55px;
-  width: 55px;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  color: #fff;
-  font-size: 1.2rem;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
-  position: relative;
-  z-index: 2;
-}
-
-.back-btn:hover {
-  background-color: #6b44e0;
-}
-
-.back-btn-wrap:before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #fff;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.7);
-  border-radius: 50%;
-  opacity: 0.08;
-  animation: scale 1.2s ease-out infinite 1s;
-}
 
 @keyframes scale {
   0% {
@@ -620,10 +483,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   }
 
 
-  header .letters {
-    width: 11%;
-  }
-
   .header-content .image .img-element {
     max-width: 500px;
   }
@@ -676,15 +535,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     font-size: 5rem;
   }
 
-  .card-wrap {
-    margin: 1rem 0.6rem;
-  }
-
-
-  .points-sq {
-    width: 150px;
-  }
-
   .grid {
     margin: 0.8rem 0;
   }
@@ -693,78 +543,12 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     padding: 0.8rem;
   }
 
-  .gallery-image {
-    height: 250px;
-    max-width: 325px;
-  }
-
-  .gallery-image .img-overlay {
-    padding: 1.4rem 2rem;
-  }
-
   .plus:before,
   .plus:after {
     width: 2.8rem;
   }
 
-  .img-overlay h3 {
-    font-size: 1.1rem;
-  }
-
-  .img-overlay h5 {
-    font-size: 0.8rem;
-  }
-
-
-  .filter-btn {
-    padding: 0.6rem 1.45rem;
-    font-size: 0.7rem;
-  }
-
-  .about img {
-    max-width: 420px;
-  }
-
-  .about .text {
-    margin-top: 0.7rem;
-  }
-
-  .skills {
-    margin: 0.9rem 0 1.7rem 0;
-  }
-
-  .skill-title {
-    font-size: 1rem;
-  }
-
-  .skill-bar {
-    height: 6px;
-  }
-
-  .about .column-1:before {
-    font-size: 6rem;
-    top: 13px;
-  }
-
-  .about .points {
-    width: 230px;
-    left: 65%;
-  }
-
-  .record-circle {
-    width: 150px;
-    height: 150px;
-    border-width: 3px;
-  }
-
-  .record-circle .number {
-    font-size: 1.8rem;
-  }
-
-  .record-circle .sub-title {
-    font-size: 0.9rem;
-  }
-
+  
   .blog-wrap {
     margin: 0.7rem 0.5rem;
   }
@@ -789,50 +573,9 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     font-size: 0.75rem !important;
   }
 
-  .blog-user i {
-    font-size: 0.8rem;
-  }
-
   .blog-text {
     font-size: 0.9rem;
     margin: 0.2rem 0 0.8rem 0;
-  }
-
-  .rate {
-    font-size: 1.15rem;
-    margin-bottom: 1.1rem;
-  }
-
-  .review-text {
-    font-size: 1.05rem;
-  }
-
-  .review-info {
-    margin-top: 1.1rem;
-  }
-
-  .review-name {
-    font-size: 1.05rem;
-  }
-
-  .review-job {
-    font-size: 0.85rem;
-  }
-
-  .quote {
-    font-size: 6.5rem;
-  }
-
-  .review-nav {
-    font-size: 1.55rem;
-  }
-
-  .swiper-button-next {
-    right: 2.5rem;
-  }
-
-  .swiper-button-prev {
-    right: 4.5rem;
   }
 
   .contact {
@@ -876,17 +619,10 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     margin: 0.4rem 0;
   }
 
-  .hireme {
-    padding: 8rem 0;
-  }
-
   .footer {
-
     margin:0 auto !important; 
     padding: 20px;
-
   }
-
 
   .input-arrow {
     font-size: 1.2rem;
@@ -896,20 +632,7 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     font-size: 0.95rem;
   }
 
-  .back-btn-wrap {
-    margin-left: 1.3rem;
-  }
-
-  .back-btn {
-    width: 43px;
-    height: 43px;
-    font-size: 0.9rem;
-  }
-
-  .back-btn-wrap:before {
-    width: 45px;
-    height: 45px;
-  }
+ 
 }
 
 @media (max-width: 850px) {
@@ -927,10 +650,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
   .column-2 {
     margin-left: 0;
     margin-top: 1rem;
-  }
-
-  .hamburger-menu {
-    display: flex;
   }
 
   .header-content {
@@ -983,98 +702,25 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     min-height: 80vh;
   }
 
-  .letters,
-  header .half-circle2,
-  header .points1,
-  header .wave2 {
-    display: none;
-  }
-
-  header .half-circle1 {
-    bottom: 55%;
-    left: 23%;
-  }
-
-  header .circle {
-    left: 8%;
-    bottom: 40%;
-  }
-
-  header .wave1 {
-    bottom: 87%;
-    left: 75%;
-  }
-
-  header .square {
-    top: initial;
-    bottom: 5%;
-    left: 13%;
-  }
-
-  header .triangle {
-    right: 14%;
-    bottom: 63%;
-  }
-
-  header .points2 {
-    width: 280px;
-    bottom: -10px;
-    left: 60%;
-  }
-
-  header .xshape {
-    left: 90%;
-    top: 54%;
-  }
-
   .grid-item {
     width: 50%;
   }
 
 
-  .skill-bar {
-    width: 100%;
-  }
-
   .about .column-1:before {
     font-size: 5rem;
-  }
-
-  .about .points {
-    top: 60%;
-    left: 59%;
-  }
-
-  .records .wave1,
-  .records .triangle {
-    display: none;
   }
 
   .records .container1 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .records .wave2 {
-    left: 48%;
-  }
-
-  .records .sqaure2 {
-    bottom: 45%;
-    right: 50px;
-  }
-
-  .testi-content {
-    margin-top: 1.7rem;
-  }
 
   .testi-content .image {
     max-width: 500px;
     margin: 0 auto;
   }
 
-  .review-nav {
-    bottom: 3rem;
-  }
 
   .contact-box {
     grid-template-columns: 1fr;
@@ -1136,55 +782,6 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     font-size: 0.92rem;
   }
 
-  .records .container1 {
-    grid-template-columns: 1fr;
-  }
-
-  .records .half-circle {
-    top: 50%;
-    left: 50px;
-  }
-
-  .records .wave2 {
-    bottom: 50%;
-    right: 20px;
-    left: initial;
-  }
-
-  .records .xshape {
-    right: 70px;
-  }
-
-  .records .square2 {
-    bottom: 90px;
-    right: 40px;
-  }
-
-  .testi-content {
-    margin-top: 1rem;
-  }
-
-  .review {
-    padding: 1.5rem 1rem;
-  }
-
-  .review-text {
-    font-size: 0.9rem;
-  }
-
-  .review-nav {
-    bottom: 1.5rem;
-    font-size: 1.3rem;
-  }
-
-  .swiper-button-next {
-    right: 1.3rem;
-  }
-
-  .swiper-button-prev {
-    right: 3rem;
-  }
-
   .contact {
     padding: 8rem 0 5rem 0;
   }
@@ -1212,10 +809,12 @@ nav {background-color: #313030; width: 100%; padding-bottom: 20px; position: fix
     margin: 0.25rem 0;
   }
 
+ .header-img { 
+  margin: 0 auto; 
+  margin-top: 25px;
+ }
 
-.header-img { margin: 0 auto; margin-top: 25px;}
 
-.h-100 {grid-column-gap: 0.3rem;}
 
 }
 
